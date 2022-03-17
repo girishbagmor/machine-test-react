@@ -62,7 +62,7 @@ function Register() {
     setLoading(true);
     registerApi(data, accountType)
       .then((response) => {
-        toast.success("Register Successfully");
+        toast.success(response.msg);
         resetForm();
         setLoading(false);
       })
